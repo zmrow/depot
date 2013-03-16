@@ -9,6 +9,11 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
+group :production do
+	gem 'pg'
+	gem 'activerecord-postgresql-adapter'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -40,3 +45,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'debugger'
 
 gem 'will_paginate', '~> 3.0'
+gem 'heroku'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
